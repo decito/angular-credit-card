@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-size: 60%;
+  font-family: Arial, Sans-Serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}

@@ -1,0 +1,9 @@
+.success-alert {
+  border: 1px solid green;
+  background: rgba(0, 255, 0, .4);
+  border-radius: .6rem;
+  font-weight: bold;
+  font-size: 3.2rem;
+  width: 70%;
+  margin: 0 auto;
+}
