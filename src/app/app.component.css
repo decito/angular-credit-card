@@ -1,7 +1,8 @@
-main {
+.container {
+  width: 90vw;
+  max-width: 700px;
+
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  height: 70vh;
-  justify-content: center;
+  gap: 3rem;
 }

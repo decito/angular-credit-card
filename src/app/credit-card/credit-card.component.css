@@ -1,0 +1,28 @@
+main {
+  margin: 0 auto;
+  width: 400px;
+  height: 250px;
+  padding: 2rem;
+  background: #aaa;
+  border: 1px solid salmon;
+  border-radius: 1.4rem 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 1.2rem;
+
+  font-size: 2.4rem;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  font-size: 3.2rem;
+  text-align: center;
+}

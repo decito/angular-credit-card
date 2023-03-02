@@ -1,11 +1,27 @@
-* {
+:root {
   font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+body,
+input,
+button,
+textarea {
   font-family: Arial, Sans-Serif;
 }
 
 body {
   background: linear-gradient(180deg, rgba(65, 43, 80, 1) 0%, rgba(68, 19, 102, 1) 30%, rgba(0, 0, 0, 1) 100%) no-repeat fixed;
   color: white;
-  margin: 0 auto;
-  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
 }
