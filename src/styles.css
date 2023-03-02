@@ -4,6 +4,8 @@
 }
 
 body {
+  background: linear-gradient(180deg, rgba(65, 43, 80, 1) 0%, rgba(68, 19, 102, 1) 30%, rgba(0, 0, 0, 1) 100%) no-repeat fixed;
+  color: white;
   margin: 0 auto;
   max-width: 1440px;
 }
