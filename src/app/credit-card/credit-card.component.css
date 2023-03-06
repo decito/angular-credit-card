@@ -3,17 +3,43 @@ main {
   width: 400px;
   height: 250px;
   padding: 2rem;
-  background: #aaa;
-  border: 1px solid salmon;
+  background-color: #333;
+  background-image: url(https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/8.jpeg);
   border-radius: 1.4rem 1.6rem;
+  position: relative;
+}
 
+main::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1.4rem 1.6rem;
+}
+
+.card-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   gap: 1.2rem;
+  height: 100%;
+}
 
-  font-size: 2.4rem;
+.uppercase {
+  text-transform: uppercase;
+}
+
+input {
+  background: none;
+  border: none;
+  color: white;
+}
+
+input::placeholder {
+  opacity: 1;
 }
 
 header,
@@ -22,7 +48,42 @@ footer {
   justify-content: space-between;
 }
 
+header,
+.center,
+footer {
+  z-index: 2;
+}
+
+header {
+  font-size: 1.8rem;
+}
+
 .center {
   font-size: 3.2rem;
   text-align: center;
+}
+
+footer {
+  gap: 2.2rem;
+}
+
+footer label {
+  font-size: 1.4rem;
+}
+
+footer input,
+footer span {
+  font-size: 2.4rem;
+}
+
+footer input#owner-name {
+  max-width: 26.2rem;
+}
+
+footer>section:nth-child(1) {
+  max-width: 70%;
+}
+
+.card-date input {
+  max-width: 2.8rem;
 }
