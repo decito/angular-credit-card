@@ -13,18 +13,21 @@
       <section>
         <label for="owner-name">Nome do Titular</label>
 
-        <input type="text" id="owner-name" class="uppercase" [(ngModel)]="ownerName" (input)="allowWordOnly($event)" />
+        <input type="text" id="owner-name" class="uppercase" [(ngModel)]="ownerName" (input)="allowWordOnly($event)"
+          placeholder="Fulano Silva" />
       </section>
 
       <section>
         <label for="expirationDate">Validade</label>
 
         <div class="card-date">
-          <input id="expiration-month" maxlength="2" [(ngModel)]="expirationMonth" (input)="allowDigitOnly($event)" />
+          <input id="expiration-month" maxlength="2" [(ngModel)]="expirationMonth" (input)="allowDigitOnly($event)"
+            placeholder="12" />
 
           <span> / </span>
 
-          <input id="expiration-month" maxlength="2" [(ngModel)]="expirationYear" (input)="allowDigitOnly($event)" />
+          <input id="expiration-year" maxlength="2" [(ngModel)]="expirationYear" (input)="allowDigitOnly($event)"
+            placeholder="23" />
         </div>
       </section>
     </footer>
